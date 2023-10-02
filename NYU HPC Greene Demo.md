@@ -1,17 +1,17 @@
 # NYU HPC Greene Demo
 
-The very first thing is that you need to be connected to NYU VPN. You need download Anyconnect from Cisco. Further information on installation and setup of NYU VPN can be found [here]([Public - VPN: Installing and using VPN on a Windows computer - Service Portal](https://nyu.service-now.com/sp?id=kb_article&sysparm_article=KB0011177&sys_kb_id=6177d7031c811904bbcf4dc2835ec340&spa=1). 
+The very first thing is that you need to be connected to NYU VPN. You need download Anyconnect from Cisco. Further information on the installation and setup of NYU VPN can be found [here](https://nyu.service-now.com/sp?id=kb_article&sysparm_article=KB0011177&sys_kb_id=6177d7031c811904bbcf4dc2835ec340&spa=1). 
 
 Once you are on the network, you can log in to the gateway servers using the shell command:
 
 ```bash
-ssh pm3483@gw.hpc.nyu.edu
+ssh <NYU-NET-ID>@gw.hpc.nyu.edu
 ```
 
 The next step is to get you connected to NYU greene HPC:
 
 ```bash
-ssh pm3483@greene.hpc.nyu.edu
+ssh <NYU-NET-ID>@greene.hpc.nyu.edu
 ```
 
 to access the burst node, you can run:
@@ -34,7 +34,7 @@ module avail
 
 **for example:**
 
-- For the assignment we were asked to use MKL library, the package that we had use was : `python/intel/3.8.6/` 
+- For the assignment we were asked to use MKL library, the package that we had use was: `python/intel/3.8.6/` 
 
 - To use that package, you will write:
 
@@ -57,7 +57,7 @@ module list
 # to check if the packages have been purged out or not
 ```
 
-and this will give you fresh restart where you can load new packages for your programs.
+and this will give you a fresh restart where you can load new packages for your programs.
 
 ## Executing the code on NYU HPC:
 
